@@ -35,4 +35,22 @@ flowchart TD
     K@{ shape: rounded}
 ```
 ## Pseudocódigo
-
+``` pseudocode
+[variables]
+	Leer n //numero hasta que se evaluará el algoritmo
+	Leer i //multiplo evaluante
+	Leer j
+[Inicio]
+	Para i<=2 Hasta i < n+1 Con Paso 1 Hacer
+    Si i%n == 0
+		  Para j = i Hasta j < n+1 Con Paso i Hacer//se le asigna el valor del multiplo para evaluarlo sin asignar otro valor a i
+			  j = j + i //se suma el evaluante para buscar sus multiplos
+			  Si j<n+1 Entonces
+				  Si j%i == 0  Entonces
+					  Escribir j," es multiplo de ", i, "no es primo" //se muestran los multiplos del evaluante
+		  Fin Para
+	  SiNo
+		  Escribir i, "es un numero primo"
+	  Fin Para
+[Fin]
+```
