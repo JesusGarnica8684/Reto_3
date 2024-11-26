@@ -46,8 +46,7 @@ flowchart TD
 		  Para j = i Hasta j < n+1 Con Paso i Hacer//se le asigna el valor del multiplo para evaluarlo sin asignar otro valor a i
 			  j = j + i //se suma el evaluante para buscar sus multiplos
 			  Si j<n+1 Entonces
-				  Si j%i == 0  Entonces
-					  Escribir j," es multiplo de ", i, "no es primo" //se muestran los multiplos del evaluante
+				Escribir j," es multiplo de ", i, "no es primo" //se muestran los multiplos del evaluante
 		  Fin Para
 	  SiNo
 		  Escribir i, "es un numero primo"
